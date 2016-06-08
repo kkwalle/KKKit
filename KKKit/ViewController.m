@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "KKCategory.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(100, 150, 150, 80)];
+    [textField setTextFont:nil textColor:[UIColor purpleColor] borderStyle:UITextBorderStyleRoundedRect];
+    
+    [textField setAttPlaceholder:@"hello world" TextFont:[UIFont systemFontOfSize:50] textColor:[UIColor redColor]];
+    [self.view addSubview:textField];
 }
 
 @end

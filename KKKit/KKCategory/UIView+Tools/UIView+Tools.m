@@ -16,12 +16,11 @@
     UIBezierPath *maskPath=  [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                                    byRoundingCorners:corners
                                                          cornerRadii:cornerRadius];
-    CAShapeLayer *maskLayer=[[CAShapeLayer alloc] init];
-    maskLayer.frame=self.bounds;
-    maskLayer.path=maskPath.CGPath;
-    self.layer.mask=maskLayer;
-    self.layer.masksToBounds=YES;
-
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+    self.layer.masksToBounds = YES;
 }
 
 /* ---- 设置圆角边框 ---- */
