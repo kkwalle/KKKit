@@ -30,7 +30,7 @@
 - (void)setAttPlaceholder:(NSString *)placeholder
                  TextFont:(UIFont *)textFont
                 textColor:(UIColor *)textColor {
-    
+    //
     NSMutableAttributedString *mString = [[NSMutableAttributedString alloc] initWithString:placeholder];
     NSMutableDictionary *attDict = [NSMutableDictionary dictionary];
     if (textFont) {

@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(100, 150, 150, 80)];
-    [textField setTextFont:nil textColor:[UIColor purpleColor] borderStyle:UITextBorderStyleRoundedRect];
+    [textField setTextFont:nil textColor:[UIColor purpleColor] borderStyle:UITextBorderStyleNone];
     
     [textField setAttPlaceholder:@"hello world" TextFont:[UIFont systemFontOfSize:50] textColor:[UIColor redColor]];
     [self.view addSubview:textField];
