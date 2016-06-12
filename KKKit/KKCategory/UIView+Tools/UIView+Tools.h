@@ -31,4 +31,12 @@
 @property (nonatomic, assign) CGFloat bottom;
 @property (nonatomic, assign) CGFloat right;
 
+/* ---- 快捷布局 ---- */
+
+/* ---- left, right, top, bottom ---- */
+- (void)setLeft:(CGFloat)left toRight:(CGFloat)toRight top:(CGFloat)top bottom:(CGFloat)bottom;
+
+/* ---- left, right, top, height ---- */
+- (void)setLeft:(CGFloat)left toRight:(CGFloat)toRight top:(CGFloat)top height:(CGFloat)height;
+
 @end

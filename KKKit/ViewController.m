@@ -23,6 +23,12 @@
     
     [textField setAttPlaceholder:@"hello world" TextFont:[UIFont systemFontOfSize:50] textColor:[UIColor redColor]];
     [self.view addSubview:textField];
+    
+    
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = [UIColor redColor];
+    [view setLeft:10 toRight:10 top:20 height:40];
+    [self.view addSubview:view];
 }
 
 @end

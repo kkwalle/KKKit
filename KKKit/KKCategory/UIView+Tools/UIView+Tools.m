@@ -148,4 +148,18 @@
     self.frame = frame;
 }
 
+/* ---- 快捷布局 ---- */
+
+/* ---- left, right, top, bottom ---- */
+- (void)setLeft:(CGFloat)left toRight:(CGFloat)toRight top:(CGFloat)top bottom:(CGFloat)bottom {
+    CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
+    self.frame = CGRectMake(left, top, screenW-toRight-left, bottom - top);
+}
+
+/* ---- left, right, top, height ---- */
+- (void)setLeft:(CGFloat)left toRight:(CGFloat)toRight top:(CGFloat)top height:(CGFloat)height {
+    CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
+    self.frame = CGRectMake(left, top, screenW-toRight-left, height);
+}
+
 @end
