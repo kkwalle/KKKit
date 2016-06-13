@@ -11,16 +11,17 @@
 
 @implementation UIButton (Tools)
 
-//设置各属性, StateNormal
-- (void)setNorBgColor:(UIColor *)bgColor
+//设置各属性, forState
+- (void)setBgColor:(UIColor *)bgColor
                 Title:(NSString *)title
             titleFont:(UIFont *)titleFont
-           titleColor:(UIColor *)titleColor {
+           titleColor:(UIColor *)titleColor
+             forState:(UIControlState)state {
     //
-    [self setBackgroundColor:bgColor forState:UIControlStateNormal];
-    [self setTitle:title forState:UIControlStateNormal];
+    [self setBackgroundColor:bgColor forState:state];
+    [self setTitle:title forState:state];
     [self.titleLabel setFont:titleFont];
-    [self setTitleColor:titleColor forState:UIControlStateNormal];
+    [self setTitleColor:titleColor forState:state];
 }
 
 //快捷设置目标方法, TouchUpInside

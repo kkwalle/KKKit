@@ -13,11 +13,12 @@
 //设置目标方法, TouchUpInside
 - (void)setTarget:(nullable id)target action:(nonnull SEL)action;
 
-//设置各属性, StateNormal
-- (void)setNorTitle:(nullable NSString *)title
-            bgColor:(nullable UIColor *)bgColor
-         titleColor:(nullable UIColor *)titleColor
-          titleFont:(nullable UIFont *)titleFont;
+//设置各属性, forState
+- (void)setBgColor:(nullable UIColor *)bgColor
+             Title:(nullable NSString *)title
+         titleFont:(nullable UIFont *)titleFont
+        titleColor:(nullable UIColor *)titleColor
+          forState:(UIControlState)state;
 
 
 //设置不同状态背景颜色
