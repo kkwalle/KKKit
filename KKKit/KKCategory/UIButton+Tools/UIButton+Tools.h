@@ -10,8 +10,10 @@
 
 @interface UIButton (Tools)
 
-//设置目标方法, TouchUpInside
-- (void)setTarget:(nullable id)target action:(nonnull SEL)action;
+//字体大小颜色, normal 状态下
+- (void)setTitle:(nullable NSString *)title titleFont:(nullable UIFont *)titleFont titleColor:(nullable UIColor *)titleColor;
+//不同状态图片
+- (void)setNorImage:(nullable UIImage *)norImage selImage:(nullable UIImage *)selImage;
 
 //设置各属性, forState
 - (void)setBgColor:(nullable UIColor *)bgColor

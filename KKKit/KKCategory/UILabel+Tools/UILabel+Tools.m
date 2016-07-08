@@ -11,12 +11,18 @@
 @implementation UILabel (Tools)
 
 /* ---- 设置各属性 ---- */
+- (void)setText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor {
+    [self setText:text];
+    [self setFont:textFont];
+    [self setTextColor:textColor];
+}
+
 - (void)setBgColor:(UIColor *)bgColor
               Text:(NSString *)text
           textFont:(UIFont *)textFont
          textColor:(UIColor *)textColor
      textAlignment:(NSTextAlignment)textAlignment {
-//----
+    //----
     [self setBackgroundColor:bgColor];
     [self setText:text];
     [self setFont:textFont];
@@ -31,7 +37,7 @@
             highTextRange:(NSRange)highTextRange
              baseTextFont:(UIFont *)baseTextFont
             baseTextColor:(UIColor *)baseTextColor {
-
+    
     //基础部分属性设置
     NSMutableAttributedString *textString = [[NSMutableAttributedString alloc] initWithString:text];
     NSDictionary *baseAttDict = @{NSFontAttributeName : baseTextFont,

@@ -44,4 +44,12 @@
                            alpha:1.0f];
 }
 
++ (UIColor *)colorWithR:(NSInteger)R G:(NSInteger)G B:(NSInteger)B {
+    return [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0];
+}
+
++ (UIColor *)colorWithWhite:(NSInteger)white {
+    return [UIColor colorWithWhite:white/255.0 alpha:1.0];
+}
+
 @end

@@ -13,4 +13,7 @@
 //十六进制转 UIColor, 例如 0xffffff, #ffffff
 + (UIColor *)colorWithHexColorString:(NSString *)hexColorString;
 
++ (UIColor *)colorWithWhite:(NSInteger)white;
++ (UIColor *)colorWithR:(NSInteger)R G:(NSInteger)G B:(NSInteger)B;
+
 @end
