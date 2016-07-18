@@ -15,6 +15,7 @@
 #import "UIColor+Tools.h"
 #import "UIImage+Tools.h"
 #import "UITextField+Tools.h"
+#import "NSObject+Tools.h"
 
 #endif /* KKCategory_h */
 

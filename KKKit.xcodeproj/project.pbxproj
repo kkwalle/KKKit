@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2C0AF81D3C9AD300953134 /* NSObject+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C0AF71D3C9AD300953134 /* NSObject+Tools.m */; };
 		3D3055661D07BFDB00574150 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3055651D07BFDB00574150 /* main.m */; };
 		3D3055691D07BFDB00574150 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3055681D07BFDB00574150 /* AppDelegate.m */; };
 		3D30556C1D07BFDB00574150 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D30556B1D07BFDB00574150 /* ViewController.m */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D2C0AF61D3C9AD300953134 /* NSObject+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Tools.h"; sourceTree = "<group>"; };
+		3D2C0AF71D3C9AD300953134 /* NSObject+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Tools.m"; sourceTree = "<group>"; };
 		3D3055611D07BFDB00574150 /* KKKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3055651D07BFDB00574150 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3D3055671D07BFDB00574150 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D2C0AF51D3C9AD300953134 /* NSObject+Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3D2C0AF61D3C9AD300953134 /* NSObject+Tools.h */,
+				3D2C0AF71D3C9AD300953134 /* NSObject+Tools.m */,
+			);
+			path = "NSObject+Tools";
+			sourceTree = "<group>";
+		};
 		3D3055581D07BFDB00574150 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				3D30557C1D07C06200574150 /* KKCategory.h */,
+				3D2C0AF51D3C9AD300953134 /* NSObject+Tools */,
 				3D3055B21D08048100574150 /* UITextField+Tools */,
 				3D30557D1D07C06200574150 /* UIButton+Tools */,
 				3D3055801D07C06200574150 /* UIColor+Tools */,
@@ -254,6 +267,7 @@
 				3D3055941D07C06200574150 /* UIView+Tools.m in Sources */,
 				3D3055921D07C06200574150 /* UIImageView+Tools.m in Sources */,
 				3D3055911D07C06200574150 /* UIImage+Tools.m in Sources */,
+				3D2C0AF81D3C9AD300953134 /* NSObject+Tools.m in Sources */,
 				3D30558F1D07C06200574150 /* UIButton+Tools.m in Sources */,
 				3D3055931D07C06200574150 /* UILabel+Tools.m in Sources */,
 				3D3055691D07BFDB00574150 /* AppDelegate.m in Sources */,
@@ -408,6 +422,7 @@
 				3D30557A1D07BFDB00574150 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
